@@ -1,0 +1,83 @@
+[starter-kit-ca.bootp]
+description = "Boot parameter"
+flash_base = 0x0000_0000
+text_base = 0xE632_0000
+file_name = "bootparam_sa0-4x2g.srec"
+
+[starter-kit-ca.bl2]
+description = "TF-A BL2"
+flash_base = 0x0004_0000
+text_base = 0xE630_4000
+file_name = "bl2-h3ulcb-4x2g.srec"
+
+[starter-kit-ca.sa6]
+description = "BL3x Information for BL2"
+flash_base = 0x0018_0000
+text_base = 0xE632_0000
+file_name = "cert_header_sa-4x2g.srec"
+
+[stater-kit-ca.bl31]
+description = "TF-A BL31"
+flash_base = 0x001C_0000
+text_base = 0x4400_0000
+
+[starter-kit-ca.optee]
+description = "TF-A OP-Tee"
+flash_base = 0x0020_0000
+text_base = 0x4410_0000
+
+[starter-kit-ca.uboot]
+description = "U-Boot"
+flash_base = 0x0064_0000
+text_base = 0x5000_0000
+
+
+[starter-kit-cr.bootp]
+name = "bootp"
+description = "Boot parameter"
+flash_base = 0x0000_0000
+text_base = 0xE632_0000
+file_name = "bootparam_sa0-4x2g.srec"
+
+[starter-kit-cr.crbl2]
+description = "Boot loader for Cortex-R"
+flash_base = 0x0004_0000
+text_base = 0xE630_4000
+file_name = "crbl2.srec"
+
+[starter-kit-cr.bl2]
+description = "TF-A BL2"
+flash_base = 0x0010_0000
+text_base = 0xE630_4000
+file_name = "bl2-h3ulcb-4x2g.srec"
+
+[starter-kit-cr.sa6]
+description = "BL3x Information for BL2"
+flash_base = 0x0018_0000
+text_base = 0xE632_0000
+file_name = "cert_header_sa-4x2g.srec"
+
+[starter-kit-cr.bl31]
+description = "TF-A BL31"
+flash_base = 0x001C_0000
+text_base = 0x4400_0000
+
+[starter-kit-cr.optee]
+description = "TF-A OP-Tee"
+flash_base = 0x0020_0000
+text_base = 0x4410_0000
+
+[starter-kit-cr.ubootca]
+description = "U-Boot for Cortex-A"
+flash_base = 0x0064_0000
+text_base = 0x5000_0000
+
+[starter-kit-cr.ubootcr]
+description = "U-Boot for Cortex-R"
+flash_base = 0x0074_0000
+text_base = 0x5100_0000
+
+[starter-kit-cr.rtos]
+description = "Bare metal for Cortex-R"
+flash_base = 0x0050_0000
+text_base = 0x7f00_0000
